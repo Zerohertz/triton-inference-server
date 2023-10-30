@@ -1,0 +1,24 @@
+name: "PYTHON"
+backend: "python"
+
+input [
+    {
+        name: "INPUT"
+        data_type: TYPE_UINT8
+        dims: [ -1 ]
+    }
+]
+
+output [
+    {
+        name: "PYTHON"
+        data_type: TYPE_FP32
+        dims: [ -1 ]
+    }
+]
+
+instance_group [
+    {
+        kind: KIND_CPU
+    }
+]
